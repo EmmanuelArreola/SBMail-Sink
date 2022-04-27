@@ -1,0 +1,38 @@
+{
+  "groups": [
+    {
+      "name": "mail",
+      "type": "mx.com.sixdelta.cloud.stream.bean.MailAccount",
+      "sourceType": "mx.com.sixdelta.cloud.stream.bean.MailAccount"
+    }
+  ],
+  "properties": [
+    {
+      "name": "mail.host",
+      "type": "java.lang.String",
+      "description": "Default to: smtp-mail.outlook.com",
+      "sourceType": "mx.com.sixdelta.cloud.stream.bean.MailAccount",
+      "defaultValue": "smtp-mail.outlook.com"
+    },
+    {
+      "name": "mail.port",
+      "type": "java.lang.String",
+      "description": "Default smtp port: 587",
+      "sourceType": "mx.com.sixdelta.cloud.stream.bean.MailAccount",
+      "defaultValue": "587"
+    },
+    {
+      "name": "mail.user",
+      "type": "java.lang.String",
+      "description": "Your user for mail",
+      "sourceType": "mx.com.sixdelta.cloud.stream.bean.MailAccount"
+    },
+    {
+      "name": "mail.password",
+      "type": "java.lang.String",
+      "description": "Your password",
+      "sourceType": "mx.com.sixdelta.cloud.stream.bean.MailAccount"
+    }
+  ],
+  "hints": []
+}
