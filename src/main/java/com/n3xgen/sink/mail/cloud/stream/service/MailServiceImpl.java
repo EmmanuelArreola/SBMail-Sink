@@ -1,4 +1,4 @@
-package mx.com.sixdelta.cloud.stream.service;
+package com.n3xgen.sink.mail.cloud.stream.service;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Properties;
@@ -9,17 +9,16 @@ import javax.mail.internet.MimeMessage;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.integration.annotation.MessageEndpoint;
-import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
 
-import mx.com.sixdelta.cloud.stream.bean.Mail;
+import com.n3xgen.sink.mail.cloud.stream.bean.Mail;
 
 @MessageEndpoint
 public class MailServiceImpl implements MailService {
 	
+	@Autowired
 	public void sendMail(Mail mail) {
-		// TODO Auto-generated method stub
 		
 		JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
 		 

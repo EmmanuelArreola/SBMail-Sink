@@ -1,0 +1,38 @@
+{
+  "groups": [
+    {
+      "name": "mail",
+      "type": "com.n3xgen.sink.mail.cloud.stream.bean.MailAccount",
+      "sourceType": "com.n3xgen.cloud.stream.bean.MailAccount"
+    }
+  ],
+  "properties": [
+    {
+      "name": "mail.host",
+      "type": "java.lang.String",
+      "description": "Host of the SMTP connection",
+      "sourceType": "com.n3xgen.sink.mail.cloud.stream.bean.MailAccount",
+      "defaultValue": "smtp-mail.outlook.com"
+    },
+    {
+      "name": "mail.port",
+      "type": "java.lang.String",
+      "description": "Port for the SMTP connection",
+      "sourceType": "com.n3xgen.sink.mail.cloud.stream.bean.MailAccount",
+      "defaultValue": "587"
+    },
+    {
+      "name": "mail.user",
+      "type": "java.lang.String",
+      "description": "Your account mail user",
+      "sourceType": "com.n3xgen.sink.mail.cloud.stream.bean.MailAccount"
+    },
+    {
+      "name": "mail.password",
+      "type": "java.lang.String",
+      "description": "Your account mail password",
+      "sourceType": "com.n3xgen.sink.mail.cloud.stream.bean.MailAccount"
+    }
+  ],
+  "hints": []
+}

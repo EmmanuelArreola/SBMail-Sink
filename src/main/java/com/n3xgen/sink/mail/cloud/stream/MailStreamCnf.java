@@ -1,4 +1,4 @@
-package mx.com.sixdelta.cloud.stream;
+package com.n3xgen.sink.mail.cloud.stream;
 
 import java.util.function.Consumer;
 
@@ -6,11 +6,12 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import com.n3xgen.sink.mail.cloud.stream.bean.Mail;
+import com.n3xgen.sink.mail.cloud.stream.bean.MailAccount;
+import com.n3xgen.sink.mail.cloud.stream.service.MailService;
+import com.n3xgen.sink.mail.cloud.stream.service.MailServiceImpl;
+
 import lombok.extern.log4j.Log4j2;
-import mx.com.sixdelta.cloud.stream.bean.Mail;
-import mx.com.sixdelta.cloud.stream.bean.MailAccount;
-import mx.com.sixdelta.cloud.stream.service.MailService;
-import mx.com.sixdelta.cloud.stream.service.MailServiceImpl;
 import reactor.core.publisher.Flux;
 
 @Log4j2
@@ -18,7 +19,6 @@ import reactor.core.publisher.Flux;
 @Configuration
 public class MailStreamCnf {
 
-	private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(MailStreamCnf.class);
 	private MailAccount mailAccount;
 	
 	public MailStreamCnf(MailAccount mailAccount) {

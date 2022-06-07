@@ -5,17 +5,17 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.6.4</version>
+		<version>2.7.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>mx.com.sixdelta</groupId>
-	<artifactId>SBMail-Sink2</artifactId>
+	<groupId>com.n3xgen.sink.mail</groupId>
+	<artifactId>mail-sink</artifactId>
 	<version>0.0.1</version>
-	<name>SBMail-Sink2</name>
-	<description>Demo app to send mails</description>
+	<name>mail-sink</name>
+	<description>SCDF custo app to send mails</description>
 	<properties>
 		<java.version>1.8</java.version>
-		<spring-cloud.version>2021.0.1</spring-cloud.version>
+		<spring-cloud.version>2021.0.3-SNAPSHOT</spring-cloud.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -37,10 +37,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-stream-binder-kafka</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-stream-binder-kafka-streams</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.kafka</groupId>
@@ -105,6 +101,9 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+					<image>
+						<name>jmalvaez/mail-sink:0.0.1</name>
+					</image>
 				</configuration>
 			</plugin>
 		</plugins>

@@ -1,4 +1,4 @@
-package mx.com.sixdelta.cloud.stream.bean;
+package com.n3xgen.sink.mail.cloud.stream.bean;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
